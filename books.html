@@ -1,0 +1,9 @@
+{{books.appName}}
+<ul>
+ <li ng-repeat="x in books.getAllBook">
+     <a ui-sref=".book_detail({id:x.id})" >{{x.name}}</a>
+  </li>
+</ul>
+
+<div ui-view></div>
+    

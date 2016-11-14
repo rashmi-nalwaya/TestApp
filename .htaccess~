@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+Options FollowSymLinks
+
+RewriteBase /
+#RewriteBase /Rashmi/learning/angular-demo/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /#/$1 [L]
+RewriteRule ^ /index.html
+</IfModule>

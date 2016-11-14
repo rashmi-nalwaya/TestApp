@@ -1,0 +1,9 @@
+<div class="login" ng-controller="loginController">
+    <form class="login-form">
+        <label>Enter Email</label>
+        <input type="email" name="email" value="" ng-model="data.email" ng-valid>
+        <label>Enter Password</label>
+        <input type="password" name="password" value="" ng-model="data.password">
+        <button ng-click="data.login()">login</button>
+    </form>
+</div>
